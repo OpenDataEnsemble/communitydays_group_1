@@ -1,0 +1,55 @@
+{
+  "title": "Health App",
+  "theme": "Health",
+  "entity": "participant",
+  "plural": "participants",
+  "registerLabel": "Register participant",
+  "followUpLabel": "Record a wellbeing check",
+  "registrationForm": "group_1_registration",
+  "followUpForm": "group_1_followup",
+  "description": "Small check-ins for a healthier community. Use fictional participants for this workshop.",
+  "accent": "#146b63",
+  "background": "#edf8f4",
+  "columns": [
+    {
+      "key": "name",
+      "label": "Participant nickname"
+    },
+    {
+      "key": "age",
+      "label": "Age in years"
+    },
+    {
+      "key": "goal",
+      "label": "Wellbeing goal"
+    }
+  ],
+  "registrationFields": [
+    {
+      "key": "name",
+      "label": "Participant nickname"
+    },
+    {
+      "key": "age",
+      "label": "Age in years"
+    },
+    {
+      "key": "goal",
+      "label": "Wellbeing goal"
+    }
+  ],
+  "followUpFields": [
+    {
+      "key": "feeling",
+      "label": "How are you feeling?"
+    },
+    {
+      "key": "sleep",
+      "label": "Hours of sleep last night"
+    },
+    {
+      "key": "notes",
+      "label": "Check-in notes"
+    }
+  ]
+}

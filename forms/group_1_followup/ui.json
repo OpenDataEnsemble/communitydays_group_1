@@ -1,0 +1,20 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/feeling",
+      "label": "How are you feeling?"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/sleep",
+      "label": "Hours of sleep last night"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/notes",
+      "label": "Check-in notes"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/name",
+      "label": "Participant nickname"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/age",
+      "label": "Age in years"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/goal",
+      "label": "Wellbeing goal"
+    }
+  ]
+}

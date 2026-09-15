@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Participant nickname",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 120,
+      "title": "Age in years"
+    },
+    "goal": {
+      "type": "string",
+      "enum": [
+        "Move more",
+        "Sleep better",
+        "Stay hydrated"
+      ],
+      "title": "Wellbeing goal"
+    }
+  },
+  "required": [
+    "name",
+    "age",
+    "goal"
+  ]
+}
