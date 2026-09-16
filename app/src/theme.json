@@ -7,9 +7,9 @@
   "followUpLabel": "Record a wellbeing check",
   "registrationForm": "group_1_registration",
   "followUpForm": "group_1_followup",
-  "description": "Small check-ins for a healthier community. Use fictional participants for this workshop.",
-  "accent": "#146b63",
-  "background": "#edf8f4",
+  "description": "A friendly space for our community to check in, share how we're doing, and support each other's wellbeing.",
+  "accent": "#1c5d8c",
+  "background": "#eaf3fb",
   "columns": [
     {
       "key": "name",
