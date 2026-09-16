@@ -24,8 +24,8 @@ function Fields({ fields, data }) {
 function RecordPage() {
   const { entityId } = useParams();
   const { api, registrations, followUps, loading, error, formError, opening, refresh, openForm } = useObservations(entityId);
-  
-  // 1. Store search term state
+
+  // Store search term state
   const [searchTerm, setSearchTerm] = useState('');
 
   const record = registrations.find((item) => item.observationId === entityId);
@@ -34,7 +34,7 @@ function RecordPage() {
     ? config.registrationFields
     : [{ key: 'name', label: 'Name' }, ...config.registrationFields];
 
-  // 2. Derive filtered registrations on render (no state duplication)
+  // Derive filtered registrations on render (no state duplication)
   const normalizedSearch = searchTerm.trim().toLowerCase();
   const filteredRegistrations = registrations.filter((item) => {
     if (!normalizedSearch) return true;
@@ -80,7 +80,7 @@ function RecordPage() {
         {!entityId ? (
           registrations.length > 0 ? (
             <>
-              {/* 3. Search input controls & Bonus Counter */}
+              {/* Search input controls & Counter */}
               <div className="search-box" style={{ marginBottom: '1rem' }}>
                 <label htmlFor="participant-search" style={{ display: 'block', marginBottom: '0.25rem', fontWeight: 'bold' }}>
                   Find a {config.entity.toLowerCase()}
@@ -98,7 +98,7 @@ function RecordPage() {
                 </p>
               </div>
 
-              {/* 4. Filtered Table vs. No Matches Message */}
+              {/* Filtered Table vs. No Matches Message */}
               {filteredRegistrations.length > 0 ? (
                 <div className="table-scroll" role="region" aria-label={`${config.plural} list`} tabIndex={0}>
                   <table>
