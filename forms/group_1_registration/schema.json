@@ -22,6 +22,11 @@
         "Stay hydrated"
       ],
       "title": "Wellbeing goal"
+    },
+    "description": {
+      "type": "string",
+      "title": "Short description",
+      "maxLength": 120
     }
   },
   "required": [

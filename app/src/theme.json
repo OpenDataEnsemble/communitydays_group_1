@@ -36,6 +36,10 @@
     {
       "key": "goal",
       "label": "Wellbeing goal"
+    },
+    {
+      "key": "description",
+      "label": "Short description"
     }
   ],
   "followUpFields": [
